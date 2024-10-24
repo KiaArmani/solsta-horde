@@ -13,7 +13,7 @@ Below you will find a couple of code snippets that you must paste into a few dif
 ## BuildAndTestProject.xml
 
 Location: `Engine\Build\Graph\Tasks\BuildAndTestProject.xml`
-Line: 695 (Paste between <!-- Publish (Packages) (Horde) -->  and <!-- Check Build Size -->)
+Line: 695 (Paste between `<!-- Publish (Packages) (Horde) -->`  and `<!-- Check Build Size -->`)
 
 ```
 <!-- COPYME: Publish to Solsta -->
@@ -39,7 +39,7 @@ Line: 695 (Paste between <!-- Publish (Packages) (Horde) -->  and <!-- Check Bui
 ```
 
 Location: Engine\Build\Graph\Tasks\BuildAndTestProject.xml
-Line: 834 (Paste under <!-- Declare labels for CIS -->)
+Line: 834 (Paste under `<!-- Declare labels for CIS -->`)
 
 ```
 <!-- COPYME: Solsta Task -->
