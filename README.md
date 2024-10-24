@@ -15,6 +15,7 @@ Below you will find a couple of code snippets that you must paste into a few dif
 Location: `Engine\Build\Graph\Tasks\BuildAndTestProject.xml`
 Line: 695 (Paste between <!-- Publish (Packages) (Horde) -->  and <!-- Check Build Size -->)
 
+```
 <!-- COPYME: Publish to Solsta -->
 <Node Name="$(PlatformPublishSolstaNodeName)">
     <ForEach Name="PackageConfiguration" Values="$(PackageConfigurations)" Separator="+">
@@ -34,13 +35,16 @@ Line: 695 (Paste between <!-- Publish (Packages) (Horde) -->  and <!-- Check Bui
             Exclude="*.pdb"
         />
     </ForEach>
-</Node>	
+</Node>
+```
 
 Location: Engine\Build\Graph\Tasks\BuildAndTestProject.xml
 Line: 834 (Paste under <!-- Declare labels for CIS -->)
 
+```
 <!-- COPYME: Solsta Task -->
 <Label Category="Clients" Name="$(PreLabelName)Publish to Solsta $(TargetPlatform)" Requires="$(PlatformPublishSolstaNodeName)" />
+```
 
 ## SolstaTask.cs
 
